@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/football.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/football.svg" type="image/x-icon">
     <!-- Tailwind CSS -->
     <link href="/dist/output.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -23,7 +23,8 @@
     <header class="w-screen h-auto lg:h-96 bg-black text-white flex justify-center items-center text-center relative">
         <div class="w-1/2">
             <h1 class="text-6xl text-orange-600 header-font mb-10">Choose Your Favorite Five</h1>
-            <p>A football player or footballer is a sportsperson who plays one of the different types of football. The
+            <p class="text-base">A football player or footballer is a sportsperson who plays one of the different types
+                of football. The
                 main types of
                 football are association football, American football, Canadian football, Australian rules football,
                 Gaelic football,
@@ -31,12 +32,12 @@
         </div>
 
         <div class="w-full h-full absolute left-0 top-0 hidden md:block lg:block">
-            <img class="absolute left-0 bottom-0 w-64" src="/images/banner-3.png" alt="">
-            <img class="absolute left-0 bottom-0 w-56" src="/images/banner-1.png" alt="">
-            <img class="absolute right-0 bottom-0 w-70" src="/images/banner-curve.png" alt="">
-            <img class="absolute right-0 bottom-0 w-70" src="/images/banner-football.png" alt="">
-            <img class="absolute right-32 top-8 w-40" src="/images/banner-2.png" alt="">
-            <img class="absolute right-80 top-44 w-40" src="/images/line-marker-white.png" alt="">
+            <img class="absolute left-0 bottom-0 w-64" src="./images/banner-3.png" alt="">
+            <img class="absolute left-0 bottom-0 w-56" src="./images/banner-1.png" alt="">
+            <img class="absolute right-0 bottom-0 w-70" src="./images/banner-curve.png" alt="">
+            <img class="absolute right-0 bottom-0 w-70" src="./images/banner-football.png" alt="">
+            <img class="absolute right-32 top-8 w-40" src="./images/banner-2.png" alt="">
+            <img class="absolute right-80 top-44 w-40" src="./images/line-marker-white.png" alt="">
         </div>
     </header>
 
@@ -48,84 +49,90 @@
                 <!-- Card 1 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
-                    <figure><img src="/images/messi.png" alt="Messi" class="w-full" /></figure>
+                    <figure><img src="./images/messi.png" alt="Messi" class="w-full" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl text-slate-200">Lionel Messi</h2>
                         <p class="text-center text-lg text-gray-400">36 Goals <i class="fa-solid fa-circle"></i> 120
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300"
+                                onclick="playerSelection(this)">Select</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
-                    <figure><img src="/images/neymar.png" alt="Messi" class="w-full" /></figure>
+                    <figure><img src="./images/neymar.png" alt="neymar" class="w-full" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl text-slate-200">Neymar Jr</h2>
                         <p class="text-center text-lg text-gray-400">36 Goals <i class="fa-solid fa-circle"></i> 120
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300"
+                                onclick="playerSelection(this)">Select</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
-                    <figure><img src="/images/kylian.png" alt="Messi" class="w-full" /></figure>
+                    <figure><img src="./images/kylian.png" alt="kylian" class="w-full" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl text-slate-200">Kylian Mbappé</h2>
                         <p class="text-center text-lg text-gray-400">36 Goals <i class="fa-solid fa-circle"></i> 120
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300"
+                                onclick="playerSelection(this)">Select</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card 4 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
-                    <figure><img src="/images/vitor.png" alt="Messi" class="w-full" /></figure>
+                    <figure><img src="./images/vitor.png" alt="vitor" class="w-full" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl text-slate-200">Vítor Machado</h2>
                         <p class="text-center text-lg text-gray-400">36 Goals <i class="fa-solid fa-circle"></i> 120
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300"
+                                onclick="playerSelection(this)">Select</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card 5 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
-                    <figure><img src="/images/sergio.png" alt="Messi" class="w-full" /></figure>
+                    <figure><img src="./images/sergio.png" alt="sergio" class="w-full" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl text-slate-200">Sergio Ramos</h2>
                         <p class="text-center text-lg text-gray-400">36 Goals <i class="fa-solid fa-circle"></i> 120
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300"
+                                onclick="playerSelection(this)">Select</button>
                         </div>
                     </div>
                 </div>
                 <!-- Card 6 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
-                    <figure><img src="/images/renato.png" alt="Messi" class="w-full" /></figure>
+                    <figure><img src="./images/renato.png" alt="renato" class="w-full" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl text-slate-200">Renato Sanches</h2>
                         <p class="text-center text-lg text-gray-400">36 Goals <i class="fa-solid fa-circle"></i> 120
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300"
+                                onclick="playerSelection(this)">Select</button>
                         </div>
                     </div>
                 </div>
@@ -142,14 +149,10 @@
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl text-slate-200">Favorite Five</h2>
                         <div class="flex justify-center">
-                            <img src="/images/line-marker-orange.png" alt="" class="w-40">
+                            <img src="./images/line-marker-orange.png" alt="" class="w-40">
                         </div>
                         <ol class="list-decimal ml-14 text-lg text-white my-4 leading-relaxed">
-                            <li>Player 1</li>
-                            <li>Player 2</li>
-                            <li>Player 3</li>
-                            <li>Player 4</li>
-                            <li>Player 5</li>
+
                         </ol>
 
                     </div>
@@ -160,11 +163,11 @@
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl text-slate-200">Budget</h2>
                         <div class="flex justify-center">
-                            <img src="/images/line-marker-orange.png" alt="" class="w-40">
+                            <img src="./images/line-marker-orange.png" alt="" class="w-40">
                         </div>
                         <div class="grid grid-cols-2 w-full">
                             <div class="w-full text-white text-lg">Per Player</div>
-                            <div class="w-full"><input type="text" name="" id="" value="1000"
+                            <div class="w-full"><input type="text" name="" id="perPlayer" value="1000"
                                     class="w-full text-lg border px-1 text-white border-white bg-black outline-none">
                             </div>
                         </div>
@@ -229,6 +232,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/utility.js"></script>
 </body>
 
 </html>
