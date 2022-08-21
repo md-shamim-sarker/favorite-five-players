@@ -8,14 +8,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/football.svg" type="image/x-icon">
+    <!-- Tailwind CSS -->
     <link href="/dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Title</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/dist/style.css">
+    <!-- Fontawesome kit link -->
     <script src="https://kit.fontawesome.com/0a1f6c0270.js" crossorigin="anonymous"></script>
+    <title>Favorite Footballer</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
+    <!-- Header part -->
     <header class="w-screen h-auto lg:h-96 bg-black text-white flex justify-center items-center text-center relative">
         <div class="w-1/2">
             <h1 class="text-6xl text-orange-600 header-font mb-10">Choose Your Favorite Five</h1>
@@ -36,7 +40,9 @@
         </div>
     </header>
 
+    <!-- Main part with player card and JS card -->
     <main class="w-3/4 mx-auto flex gap-x-4">
+        <!-- Six player cards -->
         <div class="w-3/4 my-10">
             <div class="grid grid-cols-3 gap-4">
                 <!-- Card 1 -->
@@ -49,7 +55,7 @@
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">SELECT</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
                         </div>
                     </div>
                 </div>
@@ -63,7 +69,7 @@
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">SELECT</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
                         </div>
                     </div>
                 </div>
@@ -77,7 +83,7 @@
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">SELECT</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
                         </div>
                     </div>
                 </div>
@@ -91,7 +97,7 @@
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">SELECT</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
                         </div>
                     </div>
                 </div>
@@ -105,7 +111,7 @@
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">SELECT</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
                         </div>
                     </div>
                 </div>
@@ -119,13 +125,14 @@
                             Assist
                         </p>
                         <div class="card-actions justify-center mt-5">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">SELECT</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Select</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Two JS cards -->
         <div class="w-1/4 my-10">
             <div class="grid grid-cols-1 gap-4">
                 <!-- Card 1 -->
@@ -137,7 +144,7 @@
                         <div class="flex justify-center">
                             <img src="/images/line-marker-orange.png" alt="" class="w-40">
                         </div>
-                        <ol class="list-decimal ml-14 text-lg text-white my-5 leading-relaxed">
+                        <ol class="list-decimal ml-14 text-lg text-white my-4 leading-relaxed">
                             <li>Player 1</li>
                             <li>Player 2</li>
                             <li>Player 3</li>
@@ -196,6 +203,32 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer part -->
+    <footer class="footer p-10 bg-black text-white flex justify-around">
+        <div>
+            <span class="footer-title">Services</span>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+            <span class="footer-title">Company</span>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+            <span class="footer-title">Social</span>
+            <div class="grid grid-flow-col gap-4">
+                <a><i class="fa-brands fa-square-facebook social"></i></a>
+                <a><i class="fa-brands fa-square-twitter social"></i></a>
+                <a><i class="fa-brands fa-linkedin social"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
