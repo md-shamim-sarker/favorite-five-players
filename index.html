@@ -167,39 +167,40 @@
                         </div>
                         <div class="grid grid-cols-2 w-full">
                             <div class="w-full text-white text-lg">Per Player</div>
-                            <div class="w-full"><input type="text" name="" id="perPlayer" value="1000"
+                            <div class="w-full"><input type="text" name="" id="per-player-cost"
                                     class="w-full text-lg border px-1 text-white border-white bg-black outline-none">
                             </div>
                         </div>
 
                         <div class="card-actions justify-center my-4">
-                            <button
-                                class="btn btn-primary rounded-none w-full text-base text-gray-300">Calculate</button>
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300"
+                                id="calculate-btn">Calculate</button>
                         </div>
                         <div class="flex justify-between w-full">
                             <div class="text-white text-lg">Player Expenses</div>
-                            <div class="text-white text-lg">$<span>5000</span></div>
+                            <div class="text-white text-lg">$<span id="player-expenses">0000</span></div>
                         </div>
 
                         <div class="grid grid-cols-2 w-full">
                             <div class="w-full text-white text-lg">Manager</div>
-                            <div class="w-full"><input type="text" name="" id="" value="2000"
+                            <div class="w-full"><input type="text" name="" id="manager-cost"
                                     class="w-full text-lg border px-1 text-white border-white bg-black outline-none">
                             </div>
                         </div>
                         <div class="grid grid-cols-2 w-full">
                             <div class="w-full text-white text-lg">Coach</div>
-                            <div class="w-full"><input type="text" name="" id="" value="4000"
+                            <div class="w-full"><input type="text" name="" id="coach-cost"
                                     class="w-full text-lg border px-1 text-white border-white bg-black outline-none">
                             </div>
                         </div>
                         <div class="card-actions justify-center my-4">
-                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300">Calculate
+                            <button class="btn btn-primary rounded-none w-full text-base text-gray-300"
+                                id="total-btn">Calculate
                                 Total</button>
                         </div>
                         <div class="flex justify-between w-full">
                             <div class="text-white text-lg">Total</div>
-                            <div class="text-lg text-orange-700 font-bold">$<span>11000</span></div>
+                            <div class="text-lg text-orange-700 font-bold">$<span id="total-cost">0000</span></div>
                         </div>
                     </div>
                 </div>
@@ -233,6 +234,7 @@
         </div>
     </footer>
     <script src="./js/utility.js"></script>
+    <script src="./js/budgetCalculation.js"></script>
 </body>
 
 </html>

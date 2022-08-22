@@ -12,3 +12,15 @@ function playerSelection(event) {
         alert('Sorry, You can select only five players.');
     }
 }
+
+function getInputValue(inputId) {
+    return Number(document.getElementById(inputId).value);
+}
+
+function getDataElement(elementId) {
+    return Number(document.getElementById(elementId).textContent);
+}
+
+function setTextContent(elementId, value) {
+    document.getElementById(elementId).textContent = value;
+}
