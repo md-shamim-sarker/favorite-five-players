@@ -12,3 +12,7 @@ select-best-five
         |   |-budgetCalculation.js
         |-images
 ```
+# [Live preview in netlify deployment](https://wondrous-paletas-9dcd3d.netlify.app/)
+
+# Design Image
+![image](./images/design.jpeg)
