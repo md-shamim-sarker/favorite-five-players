@@ -1,5 +1,5 @@
 // Using an event listener to 'Calculate' button with validation
-document.getElementById('calculate-btn').addEventListener('click', () => {
+document.getElementById('calculate-btn').addEventListener('click', function() {
     const perPlayerCost = getInputValue('per-player-cost');
     const liQuantity = document.querySelector('ol').childElementCount;
 
@@ -25,7 +25,7 @@ document.getElementById('calculate-btn').addEventListener('click', () => {
 });
 
 // Using an event listener to 'Calculate Total' button with validation
-document.getElementById('total-btn').addEventListener('click', () => {
+document.getElementById('total-btn').addEventListener('click', function() {
     const playerExpenses = getDataElement('player-expenses');
     const managerCost = getInputValue('manager-cost');
     const coachCost = getInputValue('coach-cost');
