@@ -15,15 +15,17 @@
     <link rel="stylesheet" href="/dist/style.css">
     <!-- Fontawesome kit link -->
     <script src="https://kit.fontawesome.com/0a1f6c0270.js" crossorigin="anonymous"></script>
+    <!-- Site title -->
     <title>Favorite Footballer</title>
 </head>
 
 <body class="overflow-x-hidden">
-    <!-- Header part -->
+    <!-- Header part start -->
     <header class="w-screen h-auto lg:h-96 bg-black text-white flex justify-center items-center text-center relative">
-        <div class="w-1/2">
-            <h1 class="text-6xl text-orange-600 header-font mb-10">Choose Your Favorite Five</h1>
-            <p class="text-base">A football player or footballer is a sportsperson who plays one of the different types
+        <div class="w-full md:w-1/2 lg:w-1/2">
+            <h1 class="text-6xl text-orange-600 header-font mb-10 mt-5">Choose Your Favorite Five</h1>
+            <p class="text-base pb-5">A football player or footballer is a sportsperson who plays one of the different
+                types
                 of football. The
                 main types of
                 football are association football, American football, Canadian football, Australian rules football,
@@ -32,21 +34,23 @@
         </div>
 
         <div class="w-full h-full absolute left-0 top-0 hidden md:block lg:block">
-            <img class="absolute left-0 bottom-0 w-64" src="./images/banner-3.png" alt="">
-            <img class="absolute left-0 bottom-0 w-56" src="./images/banner-1.png" alt="">
-            <img class="absolute right-0 bottom-0 w-70" src="./images/banner-curve.png" alt="">
-            <img class="absolute right-0 bottom-0 w-70" src="./images/banner-football.png" alt="">
-            <img class="absolute right-32 top-8 w-40" src="./images/banner-2.png" alt="">
-            <img class="absolute right-80 top-44 w-40" src="./images/line-marker-white.png" alt="">
+            <img class="absolute left-0 bottom-0 w-64" src="./images/banner-3.png" alt="banner3">
+            <img class="absolute left-0 bottom-0 w-56" src="./images/banner-1.png" alt="banner1">
+            <img class="absolute right-0 bottom-0 w-70" src="./images/banner-curve.png" alt="bannerCurve">
+            <img class="absolute right-0 bottom-0 w-70" src="./images/banner-football.png" alt="bannerFootball">
+            <img class="absolute right-32 top-8 w-40 md:hidden lg:block" src="./images/banner-2.png" alt="banner2">
+            <img class="absolute right-80 top-44 w-40 md:hidden lg:block" src="./images/line-marker-white.png"
+                alt="line marker white">
         </div>
     </header>
+    <!-- Header part end -->
 
-    <!-- Main part with player card and JS card -->
-    <main class="w-3/4 mx-auto flex gap-x-4">
+    <!-- Main part with player card and JS card start -->
+    <main class="w-full md:w-full lg:w-3/4 mx-auto flex flex-col md:flex-col lg:flex-row gap-x-4 p-5">
         <!-- Six player cards -->
-        <div class="w-3/4 my-10">
-            <div class="grid grid-cols-3 gap-4">
-                <!-- Card 1 -->
+        <div class="w-full md:w-full lg:w-3/4 my-10">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
+                <!-- Player Card 1 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
                     <figure><img src="./images/messi.png" alt="Messi" class="w-full" /></figure>
@@ -61,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 2 -->
+                <!-- Player Card 2 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
                     <figure><img src="./images/neymar.png" alt="neymar" class="w-full" /></figure>
@@ -76,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 3 -->
+                <!-- Player Card 3 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
                     <figure><img src="./images/kylian.png" alt="kylian" class="w-full" /></figure>
@@ -91,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 4 -->
+                <!-- Player Card 4 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
                     <figure><img src="./images/vitor.png" alt="vitor" class="w-full" /></figure>
@@ -106,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 5 -->
+                <!-- Player Card 5 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
                     <figure><img src="./images/sergio.png" alt="sergio" class="w-full" /></figure>
@@ -121,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 6 -->
+                <!-- Player Card 6 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
                     <figure><img src="./images/renato.png" alt="renato" class="w-full" /></figure>
@@ -140,13 +144,13 @@
         </div>
 
         <!-- Two JS cards -->
-        <div class="w-1/4 my-10">
+        <div class="w-full md:w-full lg:w-1/4 my-10">
             <div class="grid grid-cols-1 gap-4">
                 <!-- Card 1 -->
                 <div
                     class="card card-compact bg-black shadow-xl rounded-none border border-transparent hover:border-gray-400">
 
-                    <div class="card-body">
+                    <div class="card-body card-height">
                         <h2 class="card-title justify-center text-2xl text-slate-200">Favorite Five</h2>
                         <div class="flex justify-center">
                             <img src="./images/line-marker-orange.png" alt="" class="w-40">
@@ -207,9 +211,11 @@
             </div>
         </div>
     </main>
+    <!-- Main part with player card and JS card end -->
 
-    <!-- Footer part -->
-    <footer class="footer p-10 bg-black text-white flex justify-around">
+
+    <!-- Footer part start-->
+    <footer class="footer p-10 bg-black text-white grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
         <div>
             <span class="footer-title">Services</span>
             <a class="link link-hover">Branding</a>
@@ -233,6 +239,9 @@
             </div>
         </div>
     </footer>
+    <!-- Footer part end-->
+
+    <!-- External .js file included -->
     <script src="./js/utility.js"></script>
     <script src="./js/budgetCalculation.js"></script>
 </body>

@@ -1,3 +1,4 @@
+/* Google fonts import for heading font */
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 body {
@@ -16,4 +17,8 @@ i {
 
 .social {
     font-size: 20px;
+}
+
+.card-height {
+    height: 263px;
 }
