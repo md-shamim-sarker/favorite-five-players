@@ -1,6 +1,7 @@
 # Assignment 5 | Programming Hero
 
 # File Structure
+```code
 select-best-five
         |-index.html
         |-dist
@@ -10,3 +11,4 @@ select-best-five
         |   |-utility.js
         |   |-budgetCalculation.js
         |-images
+```
